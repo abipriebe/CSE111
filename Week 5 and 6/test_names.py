@@ -1,5 +1,5 @@
-from names import make_full_name, \
-    extract_given_name, extract_family_name
+# from names import make_full_name, \
+#     extract_given_name, extract_family_name
 from names import extract_family_name, extract_given_name, make_full_name
 import pytest
 
@@ -22,4 +22,4 @@ def test_extract_given_name():
     assert(extract_given_name("Cluff-Priebe;Abigail Rose") == "Abigail Rose")
     assert(extract_given_name("Talbot;Dal-lin") == "Dal-lin")
 
-pytest.main(["-v", "--tb=line", "-rN", "team activity 5.py"])
+pytest.main(["-v", "--tb=line", "-rN", "names.py"])

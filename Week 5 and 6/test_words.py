@@ -30,4 +30,4 @@ def test_suffix():
 
 # Call the main function that is part of pytest so that
 # the test functions in this file will start executing.
-pytest.main(["-v", "--tb=line", "-rN", "checkpoint 5 - test_words.py"])
+pytest.main(["-v", "--tb=line", "-rN", "test_words.py"])
