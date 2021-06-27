@@ -9,7 +9,7 @@ def main():
 def create_student_dict():
     student_dict = pd.read_csv('Week 9 and 10/students.csv', header=0, index_col=0, squeeze=True).to_dict()
     return student_dict
- 
+
 def get_inumber(dictionary):
     INUMBER_INDEX = 0
     NAME_INDEX = 1
