@@ -1,10 +1,12 @@
 import csv
 
+
 # Each row in the pupils.csv file contains three elements.
 # These are the indexes of the elements in each row.
 GIVEN_NAME_INDEX = 0
 SURNAME_INDEX = 1
 BIRTHDATE_INDEX = 2
+
 
 def main():
     try:
@@ -29,6 +31,7 @@ def main():
     except (FileNotFoundError, PermissionError) as error:
         print(type(error).__name__, error, sep=": ")
 
+
 def sort_oldest_to_youngest(students_list):
     """Sort a list of students by their birthdate.
 
@@ -47,6 +50,7 @@ def sort_oldest_to_youngest(students_list):
 
     # Return the sorted list.
     return sorted_list
+
 
 def sort_by_given_name(students_list):
     """Sort a list of students by their given name.
@@ -67,6 +71,7 @@ def sort_by_given_name(students_list):
     # Return the sorted list.
     return sorted_list
 
+
 def sort_by_birth_month_day(students_list):
     """Sort a list of students by their birth month and day.
     In other words sort the list by their birthdate but ignore
@@ -82,7 +87,7 @@ def sort_by_birth_month_day(students_list):
     # a student's birthdate without the year.
     def extract_month_and_day(student):
         birthdate_string = student[BIRTHDATE_INDEX]
-        month_and_day = birthdate_string[5:]
+        month_and_day = birthdate_string[3:]
         return month_and_day
 
     # Call the sorted function to sort the list
@@ -91,6 +96,7 @@ def sort_by_birth_month_day(students_list):
 
     # Return the sorted list.
     return sorted_list
+
 
 def read_compound_list(filename):
     """Read the text from a CSV file into a compound list.
@@ -143,4 +149,4 @@ def print_list(compound_list):
 # then call the main function. However, if this file is simply
 # imported (e.g. into a test file), then skip the call to main.
 if __name__ == "__main__":
-    main()
+    main() 
