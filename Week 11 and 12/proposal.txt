@@ -1,0 +1,42 @@
+Significant Program Proposal
+
+(This is a proposal. All proposals are written with our best knowledge
+at the beginning of a project. As we progress from the beginning to the
+end of a project, we gain more knowledge, and some of the ideas we
+proposed change. This is part of completing any project and is fine.
+However, we still must write a proposal so that our teachers or
+supervisors know what we intend to do. Please answer each of the
+following questions to the best of your knowledge.)
+
+1. What is the title of your program?
+The title of my program will be student_performance.py
+
+2. What real world problem will your program address or help to solve?
+In this program I will analyze a dataset I found on kaggle.com to make 
+observations, comparisons, and conclusions about how a student performs 
+in school according to other factors in their lives. This dataset provides 
+information on their parents' education level, gender, race, lunch 
+arrangements, and whether or not they took an optional test preparation 
+course. 
+
+3. What will you learn from developing this program?
+I have a data science minor and am very interested in statistics and data, 
+so I am looking forward to getting more practice with pandas and improving 
+my ability analyze and draw conclusions from data and especially to turn 
+those conclusions into some type of graphic that can help relay the conclusions 
+I find to someone else that doesn't understand the data. 
+
+4. What Python modules will your program use? (Some examples are: csv,
+datetime, functools, matplotlib, math, pandas, pytest, random, requests,
+and tkinter.)
+I will use pandas and matplotlib for this project. I also have heard that a library
+called altair is useful in making graphic representations of data, so I will try using 
+that as well. 
+
+5. Will you separate your Python program into functions that each
+perform a single task?
+Yes. I will incorporate functions as I clean up and reorganize the data. 
+
+6. Will you write test functions to test many of your program functions?
+Yes. I don't totally understand how it's going to work yet, but the instructions 
+make it seem like it will all be ok. :)
