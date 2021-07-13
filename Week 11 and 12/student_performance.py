@@ -32,11 +32,11 @@ def filter_edu_level(target):
     return students_target
 
 def parentedu_testprep_proportion(data):
-    num = data[data.test_preparation_course == "completed"].count()
+    num = data[data == "completed"].count()
     denom = data.count()
     return num / denom
 
-# Question 1 function
+# Main Function
 def main():
     '''
     ### QUESTION 1:
@@ -45,7 +45,6 @@ def main():
     # Create a new variable (average_score) that combines a student's math, reading, and writing scores into one 
     # that averages them together.  
     students["average_score"] = average_of_3scores(students.math_score, students.reading_score, students.writing_score)
-    students.head()
 
     # Create a boxplot that shows the distribution of average_score grouped by gender
     boxplot1 = create_boxplot(students, "gender", "average_score")
@@ -82,32 +81,32 @@ def main():
     '''
     # What proportion of students with parents who have master's degrees completed the test prep course?
     students_master = filter_edu_level("master's degree")
-    master_prop = parentedu_testprep_proportion(students_master)
+    master_prop = parentedu_testprep_proportion(students_master["test_preparation_course"])
     print(master_prop)
 
     # What proportion of students with parents who have bachelor's degrees completed the test prep course?
     students_bach = filter_edu_level("bachelor's degree")
-    bach_prop = parentedu_testprep_proportion(students_bach)
+    bach_prop = parentedu_testprep_proportion(students_bach["test_preparation_course"])
     print(bach_prop)
 
     # What proportion of students with parents who have associate's degrees completed the test prep course?
     students_asso = filter_edu_level("associate's degree")
-    asso_prop = parentedu_testprep_proportion(students_asso)
+    asso_prop = parentedu_testprep_proportion(students_asso["test_preparation_course"])
     print(asso_prop)
 
     # What proportion of students with parents who have some college experience completed the test prep course?
     students_college = filter_edu_level("some college")
-    college_prop = parentedu_testprep_proportion(students_college)
+    college_prop = parentedu_testprep_proportion(students_college["test_preparation_course"])
     print(college_prop)
 
     # What proportion of students with parents who graduated high school completed the test prep course?
     students_hs = filter_edu_level("high school")
-    hs_prop = parentedu_testprep_proportion(students_hs)
+    hs_prop = parentedu_testprep_proportion(students_hs["test_preparation_course"])
     print(hs_prop)
 
     # What proportion of students with parents who have some high school experience completed the test prep course?
     students_high = filter_edu_level("some high school")
-    high_prop = parentedu_testprep_proportion(students_high)
+    high_prop = parentedu_testprep_proportion(students_high["test_preparation_course"])
     print(high_prop)
 
     q3_data = pd.DataFrame({
@@ -118,3 +117,6 @@ def main():
     # who did not, grouped by parental education level.
     barplot = create_barplot(q3_data, "parental_edu_level", "test_prep_proportion")
     barplot
+
+if __name__ == "__main__":
+    main()
