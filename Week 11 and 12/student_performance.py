@@ -1,6 +1,8 @@
+# %%
 #Install the necessary libraries
 import pandas as pd 
 import altair as alt
+import matplotlib as plt
 
 # Load the data set 
 students = pd.read_csv('/Users/abigailcluff/Documents/cse111/Week 11 and 12/StudentPerformance.csv')
