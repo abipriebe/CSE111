@@ -11,13 +11,12 @@ students = pd.read_csv('/Users/abigailcluff/Documents/cse111/Week 11 and 12/Stud
 
 # Test the functions
 def test_average_of_3scores():
-    score1 = students.math_score
-    score2 = students.reading_score
-    score3 = students.writing_score
+    score1 = 1
+    score2 = 2
+    score3 = 3
 
     average_score = average_of_3scores(score1, score2, score3)
-    for student in students:
-        assert average_score == round((score1 + score2 + score3)/3)
+    assert average_score == round((score1 + score2 + score3)/3)
 
 def test_average_of_2scores():
     score1 = 1
@@ -32,12 +31,6 @@ def test_parentedu_testprep_proportion():
     proportion = parentedu_testprep_proportion(series, target)
 
     assert proportion == ((series[series == target].count())/series.count())
-'''
-def parentedu_testprep_proportion(data, series, target):
-    num = data[series == target].count()
-    denom = series.count()
-    return num / denom
-'''
 
 def test_filter_edu_level():
     """Verify that the filter_for_meter function works correctly."""
