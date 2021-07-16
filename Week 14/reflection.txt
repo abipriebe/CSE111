@@ -1,0 +1,40 @@
+Please take a few minutes to reflect on your experience in CSE 111 and
+think about the challenges, successes, and all that you've learned
+along the way.
+
+
+Now, please respond thoroughly (1 - 2 paragraphs for each question) to
+the following questions.
+
+1. Describe an experience you had this semester where you saw the power of
+functions.
+    I really enjoyed this class. I am an applied math major, so I had to take 
+cs241 (Survey of Object Oriented Programming) a few semesters ago. It was 
+really overwhelming and I didn't feel like I got as much out of it as I could 
+have if I had a little more background knowledge. When I added a data science 
+minor, I had to add this class, and I am so grateful! This class helped me to 
+fill the gaps that left me feeling so flustered in cs241.
+    One time in particular that I felt like I was finally understanding the 
+concept of functions and the power they have was actually when I was working 
+on a project for another class. I noticed I was copy and pasting the same chunk 
+of code over and over again and because of what I had learned in this class, I 
+turned that chunk of code into a function! And it worked! And it cleaned up my
+code very nicely.  
+
+
+2. In your judgment, what is the value of test functions?
+    Test functions are awesome! They help us to double check that our functions 
+are actually doing what we think they are doing. You can write a test function to 
+fit most any situation. I have never used a test function with pandas before, but 
+in my final project I was able to make a test function which double checked that 
+my filter function left me with the data that I had expected. 
+
+
+3. Describe your process for troubleshooting and fixing a program that
+has a problem. What is one thing you can do to improve your process?
+    I like to build test functions and use the debugger for different 
+circumstances. Test functions take more work, but they are a little more 
+straight forward and easier for me to understand, so I prefer to use 
+those when I can. I think that using the debugger however, is a more effective
+way to see the big picture. You can run it from start to finish on your 
+code, where as test functions can test snippets throughout. 
